@@ -7,35 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao DOM</title>
 
-    <script src="dom-introducao.html" defer></script>
+    <script src="dom-introducao.js" defer></script>
 </head>
 
 <body>
-    <h2>Exemplo getElementById</h2>
-        <input type="text" name="" id="idNome">
-        <button onclick="mudar()">Clique Aqui</button>
+    <!-- Exemplo por getElementByID -->
+    <h2 id="titulo">Exemplo por ID</h2>
 
-    <h2>Exemplo por classname</h2>
-        <p>Primeiro: <span class="corredor"></span></p>
-        <p>Segundo: <span class="corredor"></span></p>
-        <p>Terceiro: <span class="corredor"></span></p>
-        <br>
+    Nome: <input type="text" name="" id="idNome">
+    <button onclick="mudar()">Clique Aqui</button>
 
-        Novo classificado: <input type="text" id="novo"><br>
-        Posição: <input type="number" id="posicao" min="1" max="3">
-        <button onclick="inserir()">Inserir</button>
+    
+    <!-- Exemplo por ClassName-->
+    <h2>Exemplo por classe</h2>
+    
+    <p>Primeiro: <span class="corredor"></span></p>
+    <p>Segundo: <span class="corredor"></span></p>
+    <p>Terceiro: <span class="corredor"></span></p>
+    <br>
 
+    Novo classificado: <input type="text" id="novo"><br>
+    Posição: <input type="number" id="posicao" min="1" max="3">
+    <button onclick="inserir()">Inserir</button>
+
+    
+    <!-- Exemplo por TagName-->
     <h2>Exemplo por TagName</h2>
-        <ul>
-            <li>Janeiro</li>
-            <li>Fevereiro</li>
-            <li>Março</li>
-            <li>Abril</li>
-            <li>Maio</li>
-        </ul>
-
-        Escolha um mês: <input type="number" id="numero" min="1" max="5">
-        <button onclick="mostrar()">Mostrar</button>
-        <p>Mês escolhido: <span id="resultado"></span></p>
+    <ul>
+        <li>Janeiro</li>
+        <li>Fevereiro</li>
+        <li>Março</li>
+        <li>Abril</li>
+        <li>Maio</li>
+    </ul>
+    
+    Escolha um mês: <input type="number" id="numero" min="1" max="5">
+    <button onclick="mostrar()">Mostrar</button>
+    <p>Mês escolhido: <span id="resultado"></span></p>
 </body>
 </html>
