@@ -1,7 +1,7 @@
 //Função sem argumento
 function avisar() {
     alert("Essa é uma função")
-}
+} 
 
 avisar ()
 
