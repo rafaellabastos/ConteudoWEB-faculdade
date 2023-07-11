@@ -1,0 +1,20 @@
+/* Dentro do head colocar <link rel = "stylesheet" href = "link"> */
+
+/* Seletor para tag */
+p {
+    color: #F00;
+    font-size: 20px;
+}
+
+/* Seletor para ID */
+#titulo {
+    color: #333;
+    font-family: cursive;
+}
+
+/* Seletor para classe */
+.esporte {
+    color: #FFF;
+    text-align: center;
+}
+
