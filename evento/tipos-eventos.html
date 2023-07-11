@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de Eventos JS</title>
 
-    <script src="tipos-eventos.js" defer></script>
+    <script src="escutar-evento.js" defer></script>
+    <script src="eventos-com-mouse.js" defer></script>
+    <script src="eventos-com-teclado.js" defer></script>
 </head>
 
 <body>
@@ -33,5 +35,36 @@
     <button type="button" class="arrayElementos">Clique Aqui</button><br>
     <button type="button" class="arrayElementos">Clique Aqui</button><br>
     <button type="button" class="arrayElementos">Clique Aqui</button><br>
+
+    <h2>Com onmouseenter</h2>
+    <div id="entrada">Exemplo com mouseenter</div>
+
+    <h2>Com onmouseout</h2>
+    <div id="saida">Exemplo com mouseout</div>
+
+    <h2>Com onclick</h2>
+    <div id="clicada">Exemplo com click</div>
+
+    <h2>Com oncontextmenu</h2>
+    <div id="clicadaDireita">Exemplo com contextmenu</div>
+
+    <h2>Com ondblclick</h2>
+    <div id="duasClicadas">Exemplo com dblclick</div>
+
+    <h2>Com onmousedown</h2>
+    <div id="botaoPressionado">Exemplo com mousedown</div>
+
+    <h2>Com onmouseup</h2>
+    <div id="botaoSolto">Exemplo com mouseup</div>
+
+    <h3>Com onkeydown</h3>
+    <label for="">Digite um texto: </label>
+    <input type="text" id="inputOnKeyDown"><br>
+    <p>Resposta: <span id="respostaOnKeyDown"></span></p>
+
+    <h3>Com onkeyup</h3>
+    <label for="">Digite um texto: </label>
+    <input type="text" id="inputOnKeyUp"><br>
+    <p>Resposta: <span id="respostaOnKeyUp"></span></p>
 </body>
 </html>
