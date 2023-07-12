@@ -7,6 +7,8 @@
     <title>Comandos básicos do CSS</title>
 
     <link rel="stylesheet" href="comandos-basicos.css">
+    <link rel="stylesheet" href="preenchimento-de-fundo.css">
+    <link rel="stylesheet" href="fontes.css">
 </head>
 
 <body>
@@ -20,9 +22,59 @@
         <p>Classe - cor e alinhamento</p>
     </div>
 
-    <h1>Cores</h1>
+    <h2>Cores</h2>
     <p>RGB: color: rgb(00, 00, 00);</p>
     <p>Hexadecimais: color: #000000;</p>
-    <p><a href="https://www.w3schools.com/colors/colors_names.asp">Nomes de cores</a></p>
+    <p><a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">Nomes de cores</a></p>
+
+    <h2>Preenchimento de fundo</h2>
+    <ul>
+        <li>Background-color: define a cor de fundo</li>
+        <li>Background-image: define a imagem de fundo</li>
+        <li>Background-repeat: repeat-x: repete na horizontal</li>
+        <li>Background-repeat: repeat-y: repete na vertical</li>
+        <li>Background-repeat: repeat: epete nas duas posições</li>
+        <li>Background-repeat: no-repeat: não se repete</li>
+        <br><li>Background-attachment: fixed: imagem permanece na mesma posição da página</li>
+        <li>Background-attachment: scroll: imagem se move com conteúdo quando viola a página</li>
+        <br><li>Background-position: posição da imagem</li>
+    </ul>
+
+    <h2>Fontes</h2>
+    <h3>font-family</h3>
+    <ul class="fontFamily">
+        <li>Define a fonte do texto</li>
+        <li>font-family: arial, calibri, serif, sans-serif, monospace</li>
+    </ul>
+
+    <h3>fonts-google</h3>
+    <ul class="fontGoogle">
+        <li>Utilizar fonte do <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></li>
+        <li>Colocar no topo do CSS: @import url ('link da fonte')</li>
+        <li>font-family: nome da fonte</li>
+    </ul>
+
+    <h3>font-size</h3>
+    <ul class="fontSize">
+        <li>Define o tamanho da fonte</li>
+    </ul>
+
+    <h3>font-weight</h3>
+    <ul>
+        <li class="FWnormal">font-weight: normal - para que o texto apareça normal</li>
+        <li class="FWbold">font-weight: bold - para que o texto apareça em negrito</li>
+    </ul>
+
+    <h3>font-style</h3>
+    <ul>
+        <li class="FSnormal">font-style: normal - estilo normal</li>
+        <li class="FSitalic">font-style: italic - estilo itálico</li>
+    </ul>
+
+    <h3>font-variant</h3>
+    <ul class="fontVariant">
+        <li>font-variant: small-caps - caps um pouco abaixo da caixa alta</li>
+    </ul>
+
 </body>
 </html>
