@@ -24,19 +24,12 @@
 /* border-width*/
 .borderWidth {
     border-width: 5px; /* define o tamanho de todos os lados da borda */
-}
-
-.borderLwidth {
-    border-width: 5px 4px 5px 4px; /* define o tamanho de cada lado da porta */
+    border-style: solid;
 }
 
 /* border-style */
 .borderStyle {
     border-style: dotted; /* define o estilo de todos os lados da borda */
-}
-
-.borderLstyle {
-    border-style: dashed solid double groove ; /* define o estilo de cada lado da borda */
 }
 
 /* tipos de borda */
@@ -70,4 +63,70 @@
 
 .outset {
     border-style: outset;
+}
+
+/* border-color */
+.borderColor {
+    border-color: brown;
+    border-style: solid;
+}
+
+/* três propriedades juntas */
+.borderTudo {
+    border: 1px solid black;
+}
+
+/* preenchimento */
+.padding {
+    padding: 5px 4px;
+}
+
+/* margem */
+.margin {
+    margin: 20px;
+}
+
+/* sombras */
+.boxShadow {
+    box-shadow: 2px 2px 10px green;
+}
+
+/* cantos arredondados */
+.borderRadius {
+    border-radius: 2px;
+}
+
+/* box-sizing */
+.contentBox {
+    box-sizing: content-box;
+}
+
+.borderBox {
+    box-sizing: border-box;
+}
+
+/* posição dos elementos */
+.pStatic {
+    position: static;
+}
+
+.pRelative {
+    position: relative;
+}
+
+.pAbsolute {
+    position: absolute;
+}
+
+.pFixed {
+    position: fixed;
+}
+
+/* elementos flutuantes */
+.float {
+    float: left;
+}
+
+.clear {
+    clear: both;
 }
