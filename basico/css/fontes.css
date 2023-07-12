@@ -1,0 +1,42 @@
+@import url('link da fonte do google');
+
+/* font-family */
+.fontFamily {
+    font-family: arial, calibri, serif, sans-serif, monospace;
+}
+
+/* fonts-google */
+.fontGoogle {
+    font-family: nome-da-fonte-do-google;
+}
+
+/* font-size */
+.fontSize {
+    font-size: 20px; /* tamanho da fonte */
+}
+
+/* font-weight */
+.FWnormal {
+    font-weight: normal; /* para que o texto apareça normal */
+}
+
+.FWbold {
+    font-weight: bold; /* para que o texto apareça em negrito */
+}
+
+/* font-style */
+.FSnormal {
+    font-style: normal; /* Estilo normal */
+}
+
+.FSitalic {
+    font-style: italic; /* Estilo itálico */
+}
+
+/* font-variant */
+.fontVariant {
+    font-variant: small-caps;
+}
+
+
+

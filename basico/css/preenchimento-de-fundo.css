@@ -1,0 +1,24 @@
+/* Background-color */
+p {
+    background-color: #ddddf7;
+}
+
+/* Background-image e Background-repeat */
+body {
+    background-image: url('link da imagem');
+    background-repeat: repeat-x; /* repete na horizontal */
+    background-repeat: repeat-y; /* repete na vertical */
+    background-repeat: repeat; /* repete nas duas posições */
+    background-repeat: no-repeat; /* não se repete */
+}
+
+/* Background-attachment */
+body {
+    background-attachment: fixed; /* imagem permanece na mesma posição na página */
+    background-attachment: scroll; /* imagem se move com o conteúdo quando rola a página */
+}
+
+/* Background-position */
+img {
+    background-position: top, botton, center, left, right; /* posição da imagem */
+}
