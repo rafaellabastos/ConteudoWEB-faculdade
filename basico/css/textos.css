@@ -1,0 +1,72 @@
+/* text-align */
+.TAleft {
+    text-align: left;
+}
+
+.TAright {
+    text-align: right;
+}
+
+.TAcenter {
+    text-align: center;
+}
+
+.TAjustify {
+    text-align: justify;
+}
+
+/* text-transform */
+.TTupper {
+    text-transform: uppercase; /* texto em maiúsculo */
+}
+
+.TTlower {
+    text-transform: lowercase; /* texto em minúsculo */
+}
+
+.TTcapitalize {
+    text-transform: capitalize; /* primeira letra maiúscula */
+}
+
+/* text-decoration */
+.TDnone {
+    text-decoration: none; /* remove as decorações */
+}
+
+.TDunderline {
+    text-decoration: underline; /* linha abaixo do texto */
+}
+
+.TDoverline {
+    text-decoration: overline; /* linha acima do texto */
+}
+
+.TDlinet {
+    text-decoration: line-through; /* linha no meio do texto */
+}
+
+.TDunderover {
+    text-decoration: underline overline; /* linha em cima e embaixo do texto */
+}
+
+/* text-shadow */
+.textShadow {
+    text-shadow: 1px, 1px, 1px, red;
+}
+
+/* outras configurações */
+.lineHeight {
+    line-height: 10px; /* espaçamento entre linhas */
+}
+
+.letterSpacing {
+    letter-spacing: 10px; /* espaçamento entre letras */
+}
+
+.wordSpacing {
+    word-spacing: 10px; /* espaçamento entre palavras */
+}
+
+.textIdent {
+    text-indent: 10px; /* recuo da primeira linha */
+}

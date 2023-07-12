@@ -35,8 +35,5 @@
 
 /* font-variant */
 .fontVariant {
-    font-variant: small-caps;
+    font-variant: small-caps; /* um pouco abaixo da caixa alta */
 }
-
-
-
