@@ -1,0 +1,73 @@
+/* altura e largura */
+.altLar {
+    width: 80%; /* largura */
+    height: 150px; /* altura */
+    min-width: none;
+    max-width: none;
+    min-height: none;
+    max-height: none;
+}
+
+/* overflow */
+.OFhidden {
+    overflow: hidden; /* oculta conteúdo que não cabe na caixa */
+}
+
+.OFscroll {
+    overflow: scroll; /* adiciona barra de rolagem */
+}
+
+.OFauto {
+    overflow: auto; /* adiciona barra de rolagem se necessário */
+}
+
+/* border-width*/
+.borderWidth {
+    border-width: 5px; /* define o tamanho de todos os lados da borda */
+}
+
+.borderLwidth {
+    border-width: 5px 4px 5px 4px; /* define o tamanho de cada lado da porta */
+}
+
+/* border-style */
+.borderStyle {
+    border-style: dotted; /* define o estilo de todos os lados da borda */
+}
+
+.borderLstyle {
+    border-style: dashed solid double groove ; /* define o estilo de cada lado da borda */
+}
+
+/* tipos de borda */
+.dotted {
+    border-style: dotted;
+}
+
+.dashed {
+    border-style: dashed;
+}
+
+.solid {
+    border-style: solid;
+}
+
+.double {
+    border-style: double;
+}
+
+.groove {
+    border-style: groove;
+}
+
+.ridge {
+    border-style: ridge;
+}
+
+.inset {
+    border-style: inset;
+}
+
+.outset {
+    border-style: outset;
+}
