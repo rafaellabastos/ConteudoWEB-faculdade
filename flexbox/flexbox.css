@@ -1,0 +1,118 @@
+/* display */
+.display {
+    display: flex;
+}
+
+/* flex-direction */
+.FDrow {
+    flex-direction: row; /* os itens ficam em linha */
+}
+
+.FDrowreverse {
+    flex-direction: row-reverse; /* os itens ficam em linha reversa */
+}
+
+.FDcolumn {
+    flex-direction: column; /* os itens ficam em coluna */
+}
+
+.FDcolumnreverse {
+    flex-direction: column-reverse; /* os itens ficam em coluna reversa */
+}
+
+/* flex-wrap */
+.FWnowrap {
+    flex-wrap: nowrap; /* não quebra linha */
+}
+
+.FWwrap {
+    flex-wrap: wrap; /* quebra linha */
+}
+
+.FWwrapreverse {
+    flex-wrap: wrap-reverse; /* quebra linha na linha de cima */
+}
+
+/* justify-content */
+.JCflexstart {
+    justify-content: flex-start; /* alinha no início do container */
+}
+
+.JCflexend {
+    justify-content: flex-end; /* alinha ao final do container */
+}
+
+.JCcenter {
+    justify-content: center; /* alinha ao centro do container */
+}
+
+.JCsbetween {
+    justify-content: space-between; /* espaçamento igual entre os elementos, ocupando todo o espaço */
+}
+
+.JCsaround {
+    justify-content: space-around; /* espaçamento entre elementos com espaçamento nas pontas */
+}
+
+/* align-items */
+.AIstretch {
+    align-items: stretch; /* flex itens crescem igualmente */
+}
+
+.AIflexstart {
+    align-items: flex-start; /* alinha os itens ao início */
+}
+
+.AIflexend {
+    align-items: flex-end; /* alinha os itens ao final */
+}
+
+.AIcenter {
+    align-items: center; /* alinha os itens ao centro */
+}
+
+.AIbaseline {
+    align-items: baseline; /* alinha os itens de acordo com a linha base da tipografia */
+}
+
+/* align-content */
+.ACstretch {
+    align-content: stretch; /* flex itens crescem igualmente na vertical */
+}
+
+.ACflexstart {
+    align-content: flex-start; /* alinha todas as linhas de itens ao início */
+}
+
+.ACflexend {
+    align-content: flex-end; /* alinha todas as linhas de itens ao final */
+}
+
+.ACcenter {
+    align-content: center; /* alinha todas as linhas de itens ao centro */
+}
+
+.ACsbetween {
+    align-content: space-between; /* espaçamento igual entre as linhas do top ao bottom */
+}
+
+.ACsaround {
+    align-content: space-around; /* espaçamento entre as linhas com espaçamento maior ao meio */
+}
+
+/* Configurando itens individualmente */
+.flexGrow {
+    flex-grow: 1; /* define a proporção que um item deve crescer caso seja necessário */
+}
+
+.flexShrink {
+    flex-shrink: 0; /* define a proporção que um item deve encolher caso seja necessário */
+}
+
+.flexBasis {
+    flex-basis: 150px; /* define o tamanho inicial que um item deve ter antes que o espaço ao seu redor seja distribuído*/
+}
+
+.alignSelf {
+    align-self: center; /* alinha individualmente o item na vertical */
+}

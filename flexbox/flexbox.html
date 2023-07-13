@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+
+    <h2>display</h2>
+    <ul class="display">
+        <li>Definir a propriedade do container como flex</li>
+    </ul>
+
+    <h2>flex-direction</h2>
+    <ul>
+        <li class="FDrow">flex-direction: row - os itens ficam em linha</li>
+        <li class="FDrowreverse">flex-direction: row-reverse - os itens ficam em linha reversa</li>
+        <li class="FDcolumn">flex-direction: column - itens ficam um abaixo do outro</li>
+        <li class="FDcolumnreverse">flex-direction: column-reverse - itens ficam um abaixo do outro em ordem reversa</li>
+    </ul>
+
+    <h2>flex-wrap</h2>
+    <ul>
+        <li class="FWnowrap">flex-wrap: nowrap - os itens não quebram a linha</li>
+        <li class="FWwrap">flex-wrap: wrap - quebram um item quando não puder mais ser compactado</li>
+        <li class="FWwrapreverse">flex-wrap: wrap-reverse - quebram um item na linha de cima quando não puder mais ser compactado</li>
+    </ul>
+
+    <h2>justify-content</h2>
+    <ul>
+        <li class="JCflexstart">justify-content: flex-start - alinha no início do container</li>
+        <li class="JCflexend">justify-content: flex-end - alinha ao final do container</li>
+        <li class="JCcenter">justify-content: center - alinha ao centro do container</li>
+        <li class="JCsbetween">justify-content: space-between - espaçamento igual entre os elementos, ocupando todo o espaço</li>
+        <li class="JCsaround">justify-content: space-around - espaçamento entre elementos com espaçamento nas pontas</li>
+    </ul>
+
+    <h2>align-items</h2>
+    <ul>
+        <li class="AIstretch">align-items: stretch - flex itens crescem igualmente</li>
+        <li class="AIflexstart">align-items: flex-start - alinha os itens ao início</li>
+        <li class="AIflexend">align-items: flex-end - alinha os itens ao final</li>
+        <li class="AIcenter">align-items: center - alinha os itens ao centro</li>
+        <li class="AIbaseline">align-items: baseline - alinha os itens de acordo com a linha base da tipografia</li>
+    </ul>
+
+    <h2>align-content</h2>
+    <ul>
+        <li class="ACstretch">align-content: stretch - flex item cresce igualmente na vertical</li>
+        <li class="ACflexstart">align-content: flex-start - alinha todas as linhas de itens ao início</li>
+        <li class="ACflexend">align-content: flex-end - alinha todas as linhas de itens ao fim</li>
+        <li class="ACcenter">align-content: center - alinha todas as linhas de itens ao centro</li>
+        <li class="ACsbetween">align-content: space-between - espaçamento igual entre as linhas do topo ao bottom</li>
+        <li class="ACsaround">align-content: space-around - espaçamento entre as linhas com espaçamento maior no meio</li>
+    </ul>
+
+    <h2>Configurando itens individuais</h2>
+    <h3>flex-grow</h3>
+    <ul>
+        <li class="flexGrow">Define a proporção que um item deve crescer caso seja necessário</li>
+    </ul>
+
+    <h3>flex-shrink</h3>
+    <ul>
+        <li class="flexShrink">Define a proporção que um item deve encolher caso seja necessário</li>
+    </ul>
+
+    <h3>flex-basis</h3>
+    <ul>
+        <li class="flexBasis">Define o tamanho inicial que um item deve ter antes que o espaço ao seu redor seja distribuído</li>
+    </ul>
+
+    <h3>align-self</h3>
+    <ul>
+        <li class="flexSelf">Alinha individualmente o item na vertical</li>
+        <li class="flexSelf">Sobrescreve o align-items</li>
+    </ul>
+</body>
+</html>
