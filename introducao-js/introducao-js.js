@@ -1,14 +1,11 @@
 //Escrever no console do navegador
-console.log("Está é uma impressão no console")
+console.log("Esta é uma impressão no console")
+ 
+//Variáveis e tipos de dados
 
-//Variável com valor definido
-let nome;
-
-//Variável vazia
-let disciplina = null;
-
-//Variável com valor
-let texto = "Este é um exemplo"
+let nome;   //Variável com valor definido
+let disciplina = null;      //Variável vazia
+let texto = "Este é um exemplo"     //Variável com valor
 
 //Exemplo
 let carro = {
