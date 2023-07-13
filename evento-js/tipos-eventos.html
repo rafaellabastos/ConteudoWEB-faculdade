@@ -10,25 +10,27 @@
     <script src="escutar-evento.js" defer></script>
     <script src="eventos-com-mouse.js" defer></script>
     <script src="eventos-com-teclado.js" defer></script>
+    <script src="eventos-com-formulario.js" defer></script>
 </head>
 
 <body>
-    <h1>Função anônima</h1>
+    <!-- Eventos -->
+    <h2>Função anônima</h2>
     <button type="button" id="anonima">Clique aqui</button>
 
-    <h1>Arrow Function</h1>
+    <h2>Arrow Function</h2>
     <button type="button" id="arrowFunction">Clique Aqui</button>
 
-    <h1>Método addEventListener</h1>
+    <h2>Método addEventListener</h2>
     <button type="button" id="addEventListener">Clique Aqui</button>
 
-    <h1>Organização com addEventListener</h1>
+    <h2>Organização com addEventListener</h2>
     <button type="button" id="orgAddEvLi">Clique Aqui</button>
 
-    <h1>Método removeEventListener</h1>
+    <h2>Método removeEventListener</h2>
     <button type="button" id="removeEventListener">Clique Aqui</button>
 
-    <h1>Array de Elementos</h1>
+    <h2>Array de Elementos</h2>
     <button type="button" class="arrayElementos">Clique Aqui</button><br>
     <button type="button" class="arrayElementos">Clique Aqui</button><br>
     <button type="button" class="arrayElementos">Clique Aqui</button><br>
@@ -36,27 +38,31 @@
     <button type="button" class="arrayElementos">Clique Aqui</button><br>
     <button type="button" class="arrayElementos">Clique Aqui</button><br>
 
-    <h2>Com onmouseenter</h2>
+    <!-- Eventos com o mouse -->
+    <br><h1>Eventos com o mouse</h1>
+    <h3>Com onmouseenter</h3>
     <div id="entrada">Exemplo com mouseenter</div>
 
-    <h2>Com onmouseout</h2>
+    <h3>Com onmouseout</h3>
     <div id="saida">Exemplo com mouseout</div>
 
-    <h2>Com onclick</h2>
+    <h3>Com onclick</h3>
     <div id="clicada">Exemplo com click</div>
 
-    <h2>Com oncontextmenu</h2>
+    <h3>Com oncontextmenu</h3>
     <div id="clicadaDireita">Exemplo com contextmenu</div>
 
-    <h2>Com ondblclick</h2>
+    <h3>Com ondblclick</h3>
     <div id="duasClicadas">Exemplo com dblclick</div>
 
-    <h2>Com onmousedown</h2>
+    <h3>Com onmousedown</h3>
     <div id="botaoPressionado">Exemplo com mousedown</div>
 
-    <h2>Com onmouseup</h2>
+    <h3>Com onmouseup</h3>
     <div id="botaoSolto">Exemplo com mouseup</div>
 
+    <!-- Eventos com o teclado -->
+    <br><h1>Eventos com o teclado</h1>
     <h3>Com onkeydown</h3>
     <label for="">Digite um texto: </label>
     <input type="text" id="inputOnKeyDown"><br>
@@ -66,5 +72,39 @@
     <label for="">Digite um texto: </label>
     <input type="text" id="inputOnKeyUp"><br>
     <p>Resposta: <span id="respostaOnKeyUp"></span></p>
+
+    <!-- Eventos com o formulário -->
+    <br><h1>Eventos com o formulário</h1>
+    <h3>Com onfocus</h3>
+    <form action="index.html" method="post">
+        <label for="idNomeFocus">Nome: </label>
+        <input type="text" id="idNomeFocus">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <span id="acaoFocus"></span>
+
+    <h3>Com onblur</h3>
+    <form action="index.html" method="post">
+        <label for="idNomeBlur">Nome: </label>
+        <input type="text" id="idNomeBlur">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <span id="acaoBlur"></span>
+
+    <h3>Com onchange</h3>
+    <label for="idBarra">Escala: </label>
+    <input type="range" id="idBarra">
+    <span id="idValor">50</span>
+
+    <h3>Com onsubmit</h3>
+    <form action="index.html" method="post" id="idForm">
+        <label for="idNomeSubmit">Nome: </label>
+        <input type="text" id="idNomeSubmit" autocomplete="off">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
 </body>
-</html>
+</html> 
