@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse; /* definir se as bordas ficarão coladas ou não */
+}
+
+td,th {
+    border: 1px solid black; /* cria as linhas e colunas */
+    padding: 8px; /*define o espaçamento */
+}
+
+/* Definir cor das linhas pares */
+tr:nth-child(even){
+    background-color: aqua;
+}
+
+/* Definir cor das linhas ímpares */
+tr:nth-child(odd){
+    background-color: antiquewhite;
+}
+
+/* Definir cor para quando passar com o mouse em cima */
+tr:hover{
+    background-color: brown;
+}
+
+/* Para estilizar a mescla das linhas e colunas */
+td[colspan],td[rowspan]{
+    text-align: center;
+}

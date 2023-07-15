@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <link rel="stylesheet" href="tabela.css">
+</head>
+
+<body>   
+    <h1>Estrutura da tabela: </h1>
+    <table> <!-- Início da tabela -->
+        <thead>
+        <tr>
+            <th>Título 1</th> <!-- Criação de uma coluna em negrito -->
+            <th>Título 2</th>
+        </tr>
+        <tr> <!-- Início da linha -->
+            <td>Coluna 1</td> <!-- Criação de uma coluna -->
+            <td>Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Coluna 1</td>
+        </tr>
+    </table>
+
+    <h1>Como estruturar: </h1>
+    <p>No primeiro tr vai o th, pois eles ditarão as colunas</p>
+    <table>
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+        </tr>
+    </table>
+
+    <p>No próximos tr vai os td, pois eles representarão a continuação.</p>
+    <p>Um tr representa uma linha, então para se ter mais de uma linha tem que ter mais de um tr</p>
+
+    <table>
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+        </tr>
+
+        <tr>
+            <td>Conteúdo 1</td>
+            <td>Conteúdo 2</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Conteúdo 2</td>
+        </tr>
+    </table>
+
+    <h1>Estilização</h1>
+    <p><b>Na tag table: </b>colocar - border-collapse: ~~</p>
+    <p><b>Na tag td,th: </b>colocar - border: 1px solid black - padding: ~~px</p>
+
+    <h1>Mesclar linhas e colunas: </h1>
+    <p><b>colspan: </b>mescla um número determinado de colunas a partir da célula que contém o atributo - td colspan="2"</p>
+    <table>
+        <tr>
+            <td colspan="2">conteúdo 1</td>
+            <!-- <td>conteúdo 2</td> Essa mescla aconteceu porque uma fica do lado da outra -->
+        </tr>
+
+        <tr>
+            <td>conteúdo 1</td>
+            <td>conteúdo 2</td>
+        </tr>
+    </table>
+
+    <p><b>rowspan: </b>mescla um número determinado de linhas a partir da célula que contém o atributo - td rowspan="2"</p>
+    <table>
+        <tr>
+            <td rowspan="2">conteúdo 1</td>
+            <td>conteúdo 2</td>
+        </tr>
+
+        <tr>
+            <!-- <td>conteúdo 1</td> Essa mescla aconteceu porque uma fica embaixo da outra -->
+            <td>conteúdo 2</td>
+        </tr>
+    </table>
+
+    <h1>Outras tags</h1>
+    <p><b>thead: </b>define o conteúdo do cabeçalho na tabela</p>
+    <p><b>tbody: </b>agrupa o conteúdo do corpo da tabela</p>
+    <p><b>tfoot: </b>separa o conteúdo do rodapé da tabela</p>
+
+</body>
+</html>
