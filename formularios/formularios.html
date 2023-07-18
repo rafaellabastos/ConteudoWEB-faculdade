@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <!-- Forms    -->
+    <h1>Formulários</h1>
+
+    <h2>Tag form</h2>
+    <ul>
+        <li>Seção do documento com controles interativos para o usuário passar informações.</li>
+        <li>Dentro da tag form há alguns atributos.</li>
+    </ul>
+
+    <h3>Atributo name</h3>
+    <ul>
+        <li>Identificador do formulário</li>
+    </ul>
+
+    <h3>Atributo action</h3>
+    <ul>
+        <li>Ação que o formulário terá assim que o botão submit for pressionado</li>
+    </ul>
+
+    <h3>Atributo method</h3>
+    <ul>
+        <li>Forma de envio dos dados do formulário - get ou post</li>
+    </ul>
+
+    <!-- Exemplo -->
+    <form name="ExemploForm" action="index.html" method="get">
+        Exemplo: <input type="text">
+    </form>
+
+    <!-- Input -->
+    <h2>Tag input</h2>
+    <ul>
+        <li>Define vários tipos de entrada de dados e controle</li>
+        <li>Dentro da tag input há alguns atributos</li>
+    </ul>
+
+    <h3>Atributo name</h3>
+    <ul>
+        <li>Especifica o nome do campo - será utilizado para recuperar o valor inserido pelo usuário</li>
+    </ul>
+
+    <h3>Atributo type</h3>
+    <ul>
+        <li>Especifica o tipo de dado de entrada que o campo receberá</li>
+        <ul>
+            <li><b>button: </b>insere um botão</li>
+            <input type="button" value="Botão">
+            
+            <li><b>checkbox: </b>campo de seleção múltipla</li>
+            <input type="checkbox"> 1
+            <input type="checkbox"> 2
+            
+            <li><b>date: </b>inserção de datas a partir de um calendário</li>
+            <input type="date">
+            
+            <li><b>datetime-local: </b>inserção de data e hora</li>
+            <input type="datetime-local">
+            
+            <li><b>email: </b>caixa de e-mail</li>
+            <input type="email">
+            
+            <li><b>file: </b>campo para busca e anexo de documentos</li>
+            <input type="file">
+            
+            <li><b>month: </b>entrada/seleção de mês e ano</li>
+            <input type="month">
+            
+            <li><b>number: </b>entrada de números - define faixa de valores com min e max; define intervalo com step</li>
+            <input type="number" min="0" max="12" step="3">
+            
+            <li><b>password: </b>formato para senhas</li>
+            <input type="password">
+            
+            <li><b>radio: </b>campo de seleção única com várias opções</li>
+            <input type="radio" name="tamanho" id="pequeno" value="P">
+            <label for="pequeno">Pequeno</label><br>
+            <input type="radio" name="tamanho" id="medio" value="M">
+            <label for="medio">Medio</label><br>
+            <input type="radio" name="tamanho" id="grande" value="G">
+            <label for="grande">Grande</label>
+            
+            <li><b>ranger: </b>renderiza uma barra para selecionar uma escala de valores - possui min, max e step</li>
+            <input type="range" min="5" max="50" step="5">
+            
+            <li><b>reset: </b>limpa as informações digitadas no formulário</li>
+            <input type="reset">
+
+            <li><b>search: </b>campo de busca</li>
+            <input type="search">
+            
+            <li><b>submit: </b>envia os dados digitados para o action</li>
+            <input type="submit">
+
+            <li><b>tel: </b>número de telefone</li>
+            <input type="tel">
+
+            <li><b>text: </b>digitação de dados</li>
+            <input type="text">
+
+            <li><b>time: </b>inserção de hora e minuto</li>
+            <input type="time">
+
+            <li><b>url: </b>caixa de endereço web com endereço completo</li>
+            <input type="url">
+
+            <li><b>week: </b>entrada/seleção da semana</li>
+            <input type="week">
+        </ul>
+    </ul>
+
+    <h3>Atributo value</h3>
+    <ul>
+        <li>Determina o nome que aparecerá na caixinha</li>
+    </ul>
+
+    <!-- Exemplo -->
+    <form name="ExemploInput" action="index.html" method="get">
+        Nome: <input type="text" name="nome"><br><br>
+        E-mail: <input type="text" name="email"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Label -->
+    <h2>Tag label</h2>
+    <ul>
+        <li>Serve para rotular o campo, ou seja, dizer para o usuário para que serve aquele campo</li>
+        <li>Para relacionar um label com um input, o for no label e o id no input devem ser os mesmos</li>
+    </ul>
+
+    <!-- Exemplo -->
+    <form name="ExemploLabel" action="index.html" method="get">
+        <label for="labelNome">Nome: </label>
+        <input type="text" name="nome" id="labelNome"><br><br>
+        <label for="labelEmail">E-mail: </label>
+        <input type="text" name="email" id="labelEmail"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- fielset -->
+    <h2>Tag fielset</h2>
+    <ul>
+        <li>Elementos do formulário ficam agrupados e permitem uma maior organização dos dados no desenho do formulário</li>
+    </ul>
+
+    <!-- Exemplo -->
+    <fieldset>
+        <form action=""></form>
+        Exemplo: <input type="text">
+    </fieldset>
+
+    <!-- legend -->
+    <h2>Tag legend</h2>
+    <ul>
+        <li>Recebe um texto que permite identificar o grupo de informações que serão inseridas ali</li>
+        <br><fieldset>
+            <legend>Dados de cadastro</legend>
+            <form name="ExemploLegend" action="index.html" method="get">
+                <label for="legendNome">Nome: </label>
+                <input type="text" name="nome" id="legendNome"><br><br>
+                <label for="legendEmail">E-mail: </label>
+                <input type="text" name="email" id="legendEmail"><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </fieldset>
+    </ul>
+
+    <!-- textarea -->
+    <h2>Tag textarea</h2>
+    <ul>
+        <li>Caixa de texto de múltiplas linhas</li><br>
+        <textarea name="caixadetexto" id="exemploTextarea" cols="30" rows="10"></textarea>
+    </ul>
+
+    <!-- select/ option -->
+    <h2>Tag selection/ option</h2>
+    <ul>
+        <li>Permite a escolha de uma opção em uma lista acessada por um botão do tipo dropdown</li>
+    </ul>
+
+    <!-- Exemplo -->
+    <select name="estado" id="idEstado">
+        <option value="escolha">Escolha</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+    </select>
+
+    <!-- Outras tags -->
+    <h2>Outras tags</h2>
+    <p><b>required: </b>torna um campo do formulário obrigatório</p>
+    <p><b>autofocus: </b>dá foco automático a um determinado campo assim que o navegador carregar a página</p>
+    <p><b>autocomplete: </b>habilita ou desabilitada a sugestão de autocomplete do navegador</p>
+    <p><b>maxlenght: </b>limita a quantidade de caracteres em um campo de formulário</p>
+
+
+
+    
+</body>
+</html>
