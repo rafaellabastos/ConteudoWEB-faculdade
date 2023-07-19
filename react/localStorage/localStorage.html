@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+
+    <script src="localStorage.js" defer></script>    
+</head>
+
+<body>   
+    <h1>localStorage</h1>
+    <p>Existem duas possibilidades principais para o armazenamento de dados no navegador com ReactJS: localStorage e sessionStorage</p>
+    <p>A diferença entre eles é que os dados da sessionStorage é apagado todas vez que o navegador é fechado/ recarregado</p>
+
+    <!-- Métodos -->
+    <h2>Métodos do objeto localStorage</h2>
+    <ul>
+        <li>setItem()</li>
+        <li>getItem()</li>
+        <li>removeItem()</li>
+        <li>clear()</li>
+    </ul>
+
+    <!-- localStorage na prática -->
+    <h2>Utilizando localStorage</h2>
+    <h3>Para salvar uma informação</h3>
+    <ul>
+        <li>Utilizar o método setItem() - ele deve receber uma chave e um valor</li><br>
+        <li>localStorage.setItem("chave", "valor");</li>
+    </ul>
+
+    <h3>Para recuperar uma informação</h3>
+    <ul>
+        <li>Utilizar o método getItem() - ele deve receber uma chave</li><br>
+        <li>localStorage.getItem("chave");</li>
+    </ul>
+
+    <h3>Para remover um item</h3>
+    <ul>
+        <li>Utilizar o método removeItem() - ele deve receber uma chave</li><br>
+        <li>localStorage.removeItem("chave");</li>
+    </ul>
+
+    <h3>Para limpar tudo</h3>
+    <ul>
+        <li>Utilizar o método clear()</li><br>
+        <li>localStorage.clear();</li>
+    </ul><br>
+
+    <!-- matrizes no localStorage -->
+    <h2>Salvando matrizes no localStorage</h2>
+    <p>var ourArray = [1, 2, 3, 4, 5]; <b>--- matriz com números</b></p>
+    <p>localStorage.setItem("ourarraykey", JSON.stringify(ourArray)); --- <b>salvando no localStorage a matriz</b></p>
+
+    <p>➤ Para a matriz ser salva tem que estar convertida em string</p><br>
+
+    <!-- recuperar dados no localStorage -->
+    <h2>Recuperando dados no localStorage</h2>
+    <p>➤ Tem que primeiro converter a string de volta para uma matriz</p>
+
+    <p>var storedArray = localStorage.getItem("ourarraykey");</p>
+    <p>ourArray = JSON.parse(storedArray);</p>
+
+
+    <!-- Exemplo prático -->
+    <div>
+        <form action="index.html" method="get" onsubmit="return true">
+            <h2>Entrar</h2>
+            <div>
+                <label for="idUser">Usuário: </label>
+                <input type="text" name="txtUser" id="idUser" placeholder="Usuário">
+            </div>
+            <br><div>
+                <label for="idEmail">E-mail: </label>
+                <input type="email" name="txtEmail" id="idEmail" placeholder="E-mail">
+            </div>
+            <br><div>
+                <button type="submit" id="btnSubmit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+    <h2></h2>
+</body>
+</html>
